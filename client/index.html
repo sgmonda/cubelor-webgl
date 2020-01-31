@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Cubelor</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 500px; height: 900px; background: #231F20"></canvas>
+    <script src="Build/Cubelor for Web.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Cubelor for Web.data",
+        frameworkUrl: "Build/Cubelor for Web.framework.js",
+        codeUrl: "Build/Cubelor for Web.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Sergio Garcia Mondaray",
+        productName: "Cubelor",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
